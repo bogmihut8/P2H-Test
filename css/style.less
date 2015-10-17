@@ -1,0 +1,212 @@
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color: #f4f5f5;
+    height:100%;
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    position: relative;
+    margin:0 auto;
+    width:620px;
+    height:100%;
+}
+.form-container{
+    height:740px;
+    width:100%;
+    background-color:#fff;
+    border-radius:5px;
+    border:1px solid #ddd;
+    position: relative;
+    top:50%;
+    margin-top:-370px;
+}
+
+.form-container-header{
+    width:100%;
+    height:200px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:20px;
+}
+
+.logo-holder{
+    text-align: center;
+    padding-top:30px;
+}
+
+.form-container-header img{
+    position: relative;
+    margin:0 auto;
+}
+
+.signup-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup-subtitle{
+    text-align: center;
+}
+
+.form-container-inputs{
+    width:100%;
+}
+
+.form-container-inputs-container{
+    position: relative;
+    margin:0 auto;
+    width:500px;
+    padding-top:30px;
+}
+
+.float-right{
+    float:right;
+}
+
+label{
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+.spacer{
+    height:20px;
+}
+
+.no-bold{
+    font-weight: normal;
+    padding-top:10px;
+    color:#666;
+}
+
+.bg-green{
+    height:50px;
+    float:right;
+}
+
+.account{
+    position: relative;
+    top:500px;
+    text-align: center;
+    color:#666;
+}
+
+input[type="checkbox"]{
+    background-color: white;
+}
+
+input[type="text"]{
+        height:40px;
+    }
+
+@media screen and (max-width: 640px){
+    html{
+        overflow: auto;
+    }
+    .container, .form-container-inputs-container{
+        width:56%;
+        min-width:300px;
+    }
+    
+    .form-container{
+        height:918px;
+        position: relative;
+        top:400px;
+    }
+    
+    .form-container-inputs-container{
+        padding-top:10px;
+    }
+    
+    .form-container-header img{
+        float:left;
+        margin-left:25px;
+    }
+    
+    .logo-holder{
+        padding-top:25px;
+        width:30%;
+        float:left;
+    }
+    
+    .signup-title, .signup-subtitle{
+        width:65%;
+        float:right;
+        margin-right:15px;
+    }
+    
+    .signup-title{
+        margin-top:32px;
+        font-size:1.1rem;
+    }
+    
+    .signup-subtitle{
+        font-size:14px;
+    }
+    
+    .form-container-header{
+        height:100px;
+    }
+    
+    label{
+        display: block;
+    }
+    
+    .float-right{
+        float:none;
+        margin-top:20px;
+    }
+    
+    input[type="text"], input[type="password"]{
+        width:100%;
+    }
+    
+    .clearfix{
+        width:100%;
+    }
+    
+    div.sm-col{
+        padding:0 20px;
+    }
+    
+    .no-bold{
+        font-size: 15px;
+        padding:10px 20px;
+    }
+    
+    .bg-green{
+        width:220px;
+        position: relative;
+        left:50%;
+        margin-left: -110px;
+        float:none;
+    }
+    
+    .account{
+        position: relative;
+        margin-top:-155px;
+        margin-bottom:60px;
+    }
+}
+
+@media screen and (max-height: 770px){
+    .form-container{
+        top:400px;
+    }
+    
+    .account{
+        margin-top:-20px;
+        padding-bottom:20px;
+    }
+}
+
+@media screen and (max-height: 770px) and (max-width: 640px){
+    .account{
+        margin-top:-150px!important;
+    }
+}

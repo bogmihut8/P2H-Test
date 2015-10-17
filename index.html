@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/parsley.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-container-header">
+                <p class="logo-holder"><img src="logo/logo.svg" alt="Logo" width="50px"></p>
+                <h3 class="signup-title">Create new account</h3>
+                <p class="signup-subtitle">Enter your credentials bellow</p>
+            </div>
+            <div class="form-container-inputs">
+                <div class="form-container-inputs-container">
+                    <form id="form" data-parsley-validate>
+                        <div class="clearfix">
+                            <div class="sm-col sm-col-7">
+                                <label class="sm-col sm-col-7">Full name</label>
+                                <input type="text" class="sm-col sm-col-12 field" placeholder="Name and surname" name="Name and surname" data-trigger="change keyup keypress" data-required="true">
+                            </div>
+                            <div class="sm-col sm-col-4 float-right">  
+                                <label class="sm-col sm-col-4">Username</label>
+                                <input type="text" class="sm-col sm-col-12 field required" placeholder="Username" name="Username" data-trigger="change keyup keypress" data-required="true" data-parsley-errors-messages-disabled>
+                            </div>
+                        </div>
+
+                        <div class="clearfix spacer"></div>
+
+                        <div class="clearfix">
+                            <div class="sm-col sm-col-12">  
+                                <label class="sm-col sm-col-12">Email address</label>
+                            </div>
+                        </div>
+
+                        <div class="clearfix">
+                            <div class="sm-col sm-col-12">  
+                                <input type="text" class="sm-col sm-col-12 field required" placeholder="Email address" name="Email address" data-trigger="change keyup keypress" data-required="true" data-parsley-errors-messages-disabled>
+                            </div>
+                        </div>
+
+                        <div class="clearfix spacer"></div>                    
+
+                        <div class="clearfix">
+                            <div class="sm-col sm-col-7">     
+                                <label class="sm-col sm-col-7">Country</label>
+                                <input type="text" class="sm-col sm-col-12 field" placeholder="Country" name="Country" data-trigger="change keyup keypress" data-required="true">
+                            </div>
+                            <div class="sm-col sm-col-4 float-right">
+                                <label class="sm-col sm-col-4">City</label>
+                                <input type="text" class="sm-col sm-col-12 field" placeholder="City" name="City" data-trigger="change keyup keypress" data-required="true">
+                            </div>
+                        </div>
+
+                        <div class="clearfix spacer"></div>
+
+                        <div class="clearfix">
+                            <div class="sm-col sm-col-12">  
+                                <label class="sm-col sm-col-12">Password</label>
+                            </div>
+                        </div>
+
+                        <div class="clearfix">
+                            <div class="sm-col sm-col-12">  
+                                <input id="password" type="password" class="sm-col sm-col-12 field required" placeholder="Password" name="Password" data-trigger="change keyup keypress" data-required="true" data-parsley-errors-messages-disabled>
+                            </div>
+                            <div class="sm-col sm-col-12">  
+                                <input id="repeatPassword" type="password" class="sm-col sm-col-12 field required" placeholder="Repeat Password" name="Repeat Password" data-trigger="change keyup keypress" data-required="true" data-parsley-errors-messages-disabled>
+                            </div>
+                        </div>
+
+                        <div class="clearfix spacer"></div>
+
+                        <div class="clearfix">
+                            <p class="sm-col sm-col-7 no-bold"><input type="checkbox" class="required" name='terms-and-conditions' data-trigger="change keyup keypress" data-required="true" data-parsley-errors-messages-disabled>&nbsp;I accept the <a href="#">Terms & Conditions</a></p>
+                            <input type="submit" class="sm-col sm-col-4 btn btn-primary mb1 bg-green" value="Create account">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="account">Have account already? <a href="#">Sign in</a></p>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/parsley.min.js"></script>
+</body>
+</html>
